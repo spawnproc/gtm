@@ -439,7 +439,7 @@ void wcs_recover(gd_region *reg)
 					wcs_sleep(lcnt);
 				}
 				if (0 == cr->iosb.cond)
-				{	/* if it's abandonned wip_stopped, treat it as a WRT_STRT_PNDNG */
+				{	/* if it's abandoned wip_stopped, treat it as a WRT_STRT_PNDNG */
 					cr->iosb.cond = WRT_STRT_PNDNG;
 					cr->epid = 0;
 					cr->image_count = 0;
